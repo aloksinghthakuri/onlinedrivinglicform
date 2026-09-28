@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f2f5f9;
+    color: #172033;
+}
+
+/* Header */
+
+header {
+    background: #0b1f3a;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #55c2ff;
+}
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+
+/* License Card */
+
+.license-card {
+    max-width: 700px;
+    margin: auto;
+    background: linear-gradient(135deg, #ffffff, #eaf4ff);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    border: 1px solid #dce7f2;
+}
+
+.license-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d9e2ec;
+    padding-bottom: 18px;
+}
+
+.license-header h2 {
+    color: #0b3d78;
+}
+
+.license-header p {
+    color: #6b7785;
+    margin-top: 5px;
+}
+
+.demo-badge {
+    background: #ffb703;
+    color: #222;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.license-content {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.profile-photo {
+    width: 130px;
+    height: 160px;
+    background: #dce6f0;
+    border: 2px dashed #8da2b8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #65778a;
+    font-weight: bold;
+}
+
+.license-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    flex: 1;
+}
+
+.license-info p {
+    color: #667788;
+    line-height: 1.5;
+}
+
+.license-info span {
+    color: #172033;
+    font-size: 16px;
+}
+
+.category {
+    background: #0b3d78;
+    color: white !important;
+    padding: 5px 12px;
+    border-radius: 15px;
+}
+
+.license-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #d9e2ec;
+    padding-top: 20px;
+}
+
+.license-footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.license-footer small {
+    color: #718096;
+}
+
+.status {
+    color: #e09b00;
+}
+
+.status span,
+.vehicle-status span {
+    color: #e09b00;
+}
+
+
+/* Vehicle */
+
+.vehicle-card {
+    background: white;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e1e7ee;
+    padding-bottom: 20px;
+}
+
+.vehicle-top h2 {
+    font-size: 28px;
+    color: #0b3d78;
+}
+
+.vehicle-top p {
+    color: #718096;
+    margin-top: 5px;
+}
+
+.vehicle-icon {
+    font-size: 50px;
+}
+
+.vehicle-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 30px 0;
+}
+
+.vehicle-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.vehicle-details span {
+    color: #7b8794;
+    font-size: 13px;
+}
+
+.vehicle-details strong {
+    font-size: 16px;
+}
+
+.vehicle-status {
+    border-top: 1px solid #e1e7ee;
+    padding-top: 20px;
+    color: #e09b00;
+    font-weight: bold;
+}
+
+
+/* Buttons */
+
+button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #0b3d78;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #092e5b;
+    transform: translateY(-2px);
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background: #0b1f3a;
+    color: #cbd5e1;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .license-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .license-info {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .license-footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .vehicle-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}

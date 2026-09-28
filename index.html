@@ -1,0 +1,157 @@
+<!--online driving license and vechicle registration system-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital License & Vehicle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🚗 Digital Drive</div>
+    <nav>
+        <a href="#license">License</a>
+        <a href="#vehicle">Vehicle</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- License Section -->
+    <section id="license">
+        <h1>Digital Driving License</h1>
+
+        <div class="license-card">
+
+            <div class="license-header">
+                <div>
+                    <h2>DRIVING LICENSE</h2>
+                    <p>Digital Demo Card</p>
+                </div>
+                <div class="demo-badge">DEMO</div>
+            </div>
+
+            <div class="license-content">
+
+                <div class="profile-photo">
+                    <span>PHOTO</span>
+                </div>
+
+                <div class="license-info">
+                    <p><strong>Name</strong><br>
+                        <span id="licenseName">Aalok Singh</span>
+                    </p>
+
+                    <p><strong>License No.</strong><br>
+                        <span id="licenseNumber">DL-DEMO-123456</span>
+                    </p>
+
+                    <p><strong>Date of Birth</strong><br>
+                        <span>01 January 2000</span>
+                    </p>
+
+                    <p><strong>Category</strong><br>
+                        <span class="category">A / B</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="license-footer">
+                <div>
+                    <small>Issue Date</small>
+                    <strong>01 Jan 2025</strong>
+                </div>
+
+                <div>
+                    <small>Expiry Date</small>
+                    <strong>01 Jan 2030</strong>
+                </div>
+
+                <div class="status">
+                    <span>●</span> DEMO
+                </div>
+            </div>
+
+        </div>
+
+        <button onclick="showLicense()">Verify Demo License</button>
+    </section>
+
+
+    <!-- Vehicle Section -->
+    <section id="vehicle">
+
+        <h1>Vehicle Information</h1>
+
+        <div class="vehicle-card">
+
+            <div class="vehicle-top">
+                <div>
+                    <h2 id="vehicleNumber">BA 00 PA 1234</h2>
+                    <p>Private Vehicle • Demo</p>
+                </div>
+
+                <div class="vehicle-icon">🚘</div>
+            </div>
+
+            <div class="vehicle-details">
+
+                <div>
+                    <span>Owner</span>
+                    <strong>Aalok Singh</strong>
+                </div>
+
+                <div>
+                    <span>Vehicle Type</span>
+                    <strong>Car</strong>
+                </div>
+
+                <div>
+                    <span>Brand</span>
+                    <strong>Toyota</strong>
+                </div>
+
+                <div>
+                    <span>Model</span>
+                    <strong>Corolla</strong>
+                </div>
+
+                <div>
+                    <span>Color</span>
+                    <strong>White</strong>
+                </div>
+
+                <div>
+                    <span>Registration</span>
+                    <strong>2025</strong>
+                </div>
+
+            </div>
+
+            <div class="vehicle-status">
+                <span>●</span> DEMO RECORD
+            </div>
+
+        </div>
+
+        <button onclick="showVehicle()">View Vehicle Status</button>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>Digital Drive — Demo Website</p>
+    <p>This interface is for educational/demo purposes only.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
